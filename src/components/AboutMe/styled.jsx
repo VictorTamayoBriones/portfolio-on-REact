@@ -24,7 +24,7 @@ export const Bio = styled.div`
     gap: 20px;
     p{
         color: #fff;
-        font-size: 20px;
+        font-size: 22px;
         letter-spacing: 2px;
         line-height: 28px;
         font-weight: 300;
@@ -32,7 +32,7 @@ export const Bio = styled.div`
     a{
         color: ${theme.naranja};
         width: max-content;
-        font-size: 18px;
+        font-size: 20px;
         letter-spacing: 1px;
         text-decoration: none;
         border-bottom: solid 1px ${theme.naranja};

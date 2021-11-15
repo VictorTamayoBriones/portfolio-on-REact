@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 import { theme } from '../../theme';
 import { AboutMe } from '../AboutMe';
+import { Projects } from '../Projects';
 
 export const Main = () => {
     return(
         <ContainerMain>
             <AboutMe/>
+            <Projects/>
         </ContainerMain>
     )
 }

@@ -12,7 +12,7 @@ export const ContainerProjects = styled.div`
 export const CardProject = styled.div`
     height: max-content;
     padding-bottom: 20px;
-    overflow: hidden;
+    position: relative;
     img{
         width: 100%;
     }

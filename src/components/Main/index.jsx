@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { theme } from '../../theme';
 import { AboutMe } from '../AboutMe';
+import { Contact } from '../Contact';
+import { Footer } from '../Footer';
 import { Projects } from '../Projects';
 
 export const Main = () => {
@@ -8,6 +10,8 @@ export const Main = () => {
         <ContainerMain>
             <AboutMe/>
             <Projects/>
+            <Contact/>
+            <Footer/>
         </ContainerMain>
     )
 }

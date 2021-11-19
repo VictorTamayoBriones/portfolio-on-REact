@@ -55,5 +55,11 @@ const FormContact = styled.form`
         font-size: 18px;
         padding: 8px;
         letter-spacing: 1px;
+        transition: all ease .5s;
+        cursor: pointer;
+        &:hover{
+            background: #fff;
+            color: ${theme.naranja};
+        }
     }
 `;

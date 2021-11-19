@@ -45,6 +45,9 @@ const ContainerSocial = styled.div`
             cursor: pointer;
         }
     }
+    @media (max-width: 600px){
+        transform: translate(0px, -100px);
+    }
 `;
 
 const Text = styled.p`

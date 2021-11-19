@@ -26,4 +26,7 @@ export const ContainerModal = styled.div`
     img{
         width: 100%;
     }
+    @media (max-width: 700px){
+        width: 100%;
+    }
 `;

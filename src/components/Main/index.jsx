@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { theme } from '../../theme';
 import { AboutMe } from '../AboutMe';
 import { Contact } from '../Contact';
-import { Cuadro } from '../Cuadro';
 import { Cuadros } from '../Cuadros';
 import { Footer } from '../Footer';
 import { Projects } from '../Projects';

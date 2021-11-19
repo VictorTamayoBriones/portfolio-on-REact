@@ -12,7 +12,7 @@ export const ContainerModal = styled.div`
     top: 0;
     border-radius: 5px;
     background: rgba(0, 0, 0, 0.95);
-    z-index: 2;
+    z-index: 3;
     button{
         position: absolute;
         top: 10px;

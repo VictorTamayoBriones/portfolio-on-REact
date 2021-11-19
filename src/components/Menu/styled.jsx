@@ -19,6 +19,13 @@ const ContainerMenu = styled.div`
             cursor: pointer;
         }
     }
+    @media (max-width: 1000px){
+        width: ${props => props.open ? '50%' : '0px'};
+    }
+    @media (max-width: 600px){
+        width: ${props => props.open ? '100%' : '0px'};
+        background: rgba(0, 0, 0, 0.9);
+    }
 `;
 
 const List = styled.ul`
@@ -39,6 +46,9 @@ const ListItem = styled.li`
     &:hover{
         border-bottom: solid 2px ${ theme.naranja };
         cursor: pointer;
+    }
+    @media (max-width: 600px){
+        font-size: 30px;
     }
 `;
 

@@ -11,12 +11,26 @@ const ContainerHero = styled.div`
     flex-direction: column;
     justify-content: space-between;
     padding: 80px 0px 20px 80px;
+    position: relative;
+    z-index: 3;
+    @media (max-width: 550px){
+        padding: 20px 0px 20px 20px;
+    }
 `;
 
 const ContainerText = styled.div`
     width: 40%;
     display: flex;
     flex-direction: column;
+    @media (max-width: 1120px){
+        width: 70%;
+    }
+    @media (max-width: 550px){
+        width: 100%;
+    }
+    @media (max-width: 550px){
+        transform: translate(0px, 70px);
+    }
 `;
 
 const ContainerSocial = styled.div`
@@ -39,6 +53,14 @@ const Text = styled.p`
     font-size: 40px;
     letter-spacing: 3px;
     line-height: 70px;
+    @media (max-width: 1120px){
+        font-size: 30px;
+    }
+    @media (max-width: 550px){
+        font-size: 25px;
+        line-height: 50px;
+        letter-spacing: 2px;
+    }
 `;
 
 const Cargo = styled.h2`
@@ -48,6 +70,13 @@ const Cargo = styled.h2`
     font-size: 60px;
     letter-spacing: 5px;
     transform: translateY(80px);
+    @media (max-width: 1120px){
+        font-size: 40px;
+    }
+    @media (max-width: 550px){
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
 `;
 
 export { ContainerHero, ContainerText, ContainerSocial, Text, Cargo }

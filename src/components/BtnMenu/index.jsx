@@ -18,4 +18,7 @@ const Btn = styled.svg`
     &:hover{
         cursor: pointer;
     }
+    @media (max-width: 500px){
+        right: 20px;
+    }
 `;

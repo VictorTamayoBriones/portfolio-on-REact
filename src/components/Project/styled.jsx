@@ -7,6 +7,12 @@ export const ContainerProjects = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
+    position: relative;
+    z-index: 2;
+    @media (max-width: 700px){
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
+    }
 `;
 
 export const CardProject = styled.div`
@@ -34,6 +40,8 @@ export const ContainerBtns = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 12px;
+    position: relative;
+    z-index: 2;
     button, a{
         text-decoration: none;
         background: ${theme.naranja};
@@ -56,6 +64,22 @@ export const ContainerBtns = styled.div`
             box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.5);
             background: #fff;
             color: ${theme.naranja};
+        }
+        @media (max-width: 500px){
+            font-size: 15px;
+            svg{
+                width: 20px;
+                height: 20px;
+            }
+            gap: 5px;
+        }
+        @media (max-width: 370px){
+            font-size: 12px;
+            svg{
+                width: 20px;
+                height: 20px;
+            }
+            gap: 5px;
         }
     }
     .web{

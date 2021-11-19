@@ -28,10 +28,13 @@ const FormContact = styled.form`
         font-size: 20px;
         letter-spacing: 1px;
         outline: none;
+        @media (max-width: 500px){
+            font-size: 18px;
+        }
     }
     textarea{
         min-width: 100%;
-        max-width: 100%;
+        max-width: 200px;
         min-height: 150px;
         max-height: 200px;
         letter-spacing: 1px;

@@ -1,12 +1,22 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 import { theme } from '../../theme';
 
 export const Form = () => {
+
+    const[name, setName]=useState('');
+    const[email, setEmail]=useState('');
+    const[message, setMessage]=useState('');
+
+    const handleChange = ({target:{name, value}}) => name === 'name' ? setName(value) : setEmail(value);
+
+    const handleChangeMesssage = (e) => setMessage(e.target.value);
+
     return(
         <FormContact>
-            <input type="text" placeholder="Name" />
-            <input type="mail" placeholder="E-mail" />
-            <textarea placeholder="Message..." />
+            <input type="text" placeholder="Name" name='name' value={name} onChange={handleChange} />
+            <input type="mail" placeholder="E-mail" name='email' value={email} onChange={handleChange} />
+            <textarea placeholder="Message..." name='message' value={message} onChange={handleChangeMesssage}/>
             <button>Send message</button>
         </FormContact>
     )
